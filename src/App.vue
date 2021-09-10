@@ -2,6 +2,8 @@
   <div id="nav">
     <router-link to="/">| Users</router-link> |
     <router-link to="/cities"> Cities</router-link> |
+    <router-link to="/searchUser"> Search User </router-link> |
+    <router-link to="/searchCity"> Search City</router-link> |
   </div>
   <router-view/>
 </template>

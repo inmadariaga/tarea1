@@ -3,6 +3,8 @@ import Users from '../views/Users.vue'
 import Cities from '../views/Cities.vue'
 import UserDetails from '../views/UserDetails.vue'
 import CityDetails from '../views/CityDetails.vue'
+import SearchUser from '../views/SearchUser.vue'
+import SearchCity from '../views/SearchCity.vue'
 
 const routes = [
   {
@@ -26,6 +28,16 @@ const routes = [
     name: 'CityDetails',
     props: true,
     component: CityDetails
+  },
+  {
+    path: '/searchUser',
+    name: 'SearchUser',
+    component: SearchUser
+  },
+  {
+    path: '/searchCity',
+    name: 'SearchCity',
+    component: SearchCity
   }
 ]
 

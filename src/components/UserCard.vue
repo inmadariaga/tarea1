@@ -1,7 +1,7 @@
 <template>
   <router-link :to="{ name : 'UserDetails', params: { id: user.id } }">
     <div class="userCard">
-      <h1>{{ user.name }} {{ user.lastname }}</h1>
+      <h1>{{ user.name }} {{ user.lastName }}</h1>
       <h2> {{user.email }} </h2>
       <img v-bind:src="user.avatar">
     </div>

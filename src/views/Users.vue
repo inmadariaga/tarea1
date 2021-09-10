@@ -23,7 +23,7 @@ export default {
     UserService.getUsers(1)
     .then(response => {
       Promise.all(
-        Array.from({length: (response.headers['x-total-count'] / 10 >> 0) + 1}, (v,k)=> k+1).forEach(i => {
+        Array.from({ length: (response.headers['x-total-count'] / 10 >> 0) + 1 }, (v,k)=> k + 1).forEach(i => {
           UserService.getUsers(i)
           .then(response => {
             response.data.forEach(user => {
@@ -35,7 +35,6 @@ export default {
           })
         })
       )
-      console.log((response.headers['x-total-count'] / 10 >> 0) + 1)
     })
     .catch(error => {
       console.log(error)

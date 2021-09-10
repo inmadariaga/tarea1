@@ -28,5 +28,11 @@ export default {
     },
     getUserAddresses(id) {
         return apiClient.get('/users/' + id + '/addresses')
+    },
+    searchUser(value, page) {
+        return apiClient.get('/users?q=' + value + '&_page=' + page)
+    },
+    searchCity(value, page) {
+        return apiClient.get('/cities?q=' + value + '&_page=' + page)
     }
 }
